@@ -1,0 +1,52 @@
+{
+  "version": "2.0",
+  "app_name": "aws-cdk-sam-chalice-web-api",
+  "stages": {
+    "dev": {
+      "api_gateway_stage": "api"
+    },
+    "WebApiDev": {
+      "environment_variables": {
+        "DYNAMODB_TABLE_NAME": "${Token[TOKEN.85]}",
+        "DYNAMODB_STREAM_ARN": "${Token[TOKEN.82]}",
+        "PYAWS_CLI_DOMAIN": "your-domain.com",
+        "PYAWS_CLI_AWS_SNS_EMAIL_REGION": "me-south-1",
+        "PYAWS_CLI_IMAGE_SUBDOMAIN": "img"
+      },
+      "api_gateway_stage": "v1",
+      "api_gateway_policy_file": "ipwhitelist.json",
+      "lambda_functions": {
+        "lambda_authorizer": {
+          "lambda_memory_size": 1024,
+          "lambda_timeout": 10,
+          "manage_iam_role": false,
+          "iam_role_arn": "${Token[TOKEN.96]}",
+          "reserved_concurrency": 10,
+          "environment_variables": {}
+        },
+        "api_handler": {
+          "manage_iam_role": false,
+          "iam_role_arn": "${Token[TOKEN.96]}",
+          "environment_variables": {},
+          "lambda_memory_size": 1024,
+          "lambda_timeout": 5,
+          "reserved_concurrency": 10
+        },
+        "periodic_task": {
+          "manage_iam_role": false,
+          "iam_role_arn": "${Token[TOKEN.112]}",
+          "lambda_memory_size": 128,
+          "lambda_timeout": 5,
+          "reserved_concurrency": 2
+        },
+        "on_table_update": {
+          "manage_iam_role": false,
+          "iam_role_arn": "${Token[TOKEN.128]}",
+          "lambda_memory_size": 128,
+          "lambda_timeout": 5,
+          "reserved_concurrency": 5
+        }
+      }
+    }
+  }
+}

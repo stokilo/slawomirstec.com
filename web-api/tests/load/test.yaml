@@ -1,0 +1,35 @@
+config:
+  target: ""
+  phases:
+    - duration: 130
+      arrivalRate: 3
+scenarios:
+  - name: "Login, dashboard and todo"
+    flow:
+      - post:
+          url: "/auth/login"
+          json:
+            email: ""
+            password: ""
+          headers:
+            PyAws-Admin-Access-Secret: ""
+            PyAws-Admin-Access-SkipCaptcha: "true"
+          capture:
+            json: "$.auth.jwt"
+            as: "jwt-token"
+      - get:
+          url: "/todo?status="
+          headers:
+            authorization: "{{jwt-token}}"
+      - get:
+          url: "/todo?status=PENDING"
+          headers:
+            authorization: "{{jwt-token}}"
+      - get:
+          url: "/todo?status=COMPLETED"
+          headers:
+            authorization: "{{jwt-token}}"
+      - get:
+          url: "/dashboard?status="
+          headers:
+            authorization: "{{jwt-token}}"

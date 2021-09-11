@@ -1,0 +1,38 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "*"
+pytest-xdist = "*"
+pydevd-pycharm = "==203.6682.179"
+
+[packages]
+# All packages listed in web-api/requirements.txt must be listed here with exactly that same versions
+# Docker pyaws - intelijj idea setup import only single environment and all dependencies must be here
+cdk-chalice = "==0.8.2"
+"aws-cdk.aws-dynamodb" = "==1.97.0"
+"aws-cdk.core" = "==1.97.0"
+"aws-cdk.aws-s3-deployment" = "==1.97.0"
+"aws-cdk.aws-s3" = "==1.97.0"
+"aws-cdk.aws-iam" = "==1.97.0"
+boto3 = "==1.17.49"
+chalice = "==1.22.3"
+bcrypt = "==3.2.0"
+cryptography = "==3.3.1"
+prompt-toolkit = "==3.0.10"
+ruamel-yaml = "==0.16.12"
+pyjwt = "==1.7.1"
+pynamodb = "==5.0.3"
+pynamodb-attributes = "==0.3.0"
+dataclasses-json = "==0.5.2"
+email-validator = "==1.1.2"
+ksuid = "==1.3"
+aws-lambda-powertools = "==1.14.0"
+packaging = "==20.8"
+requests = "==2.25.1"
+jsonpickle = "==2.0.0"
+
+[requires]
+python_version = "3.8"

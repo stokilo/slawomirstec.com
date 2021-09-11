@@ -1,0 +1,28 @@
+# PyCharm files
+.idea/
+
+# macOS files
+.DS_Store
+
+# Environment
+.venv/
+venv
+
+# AWS Chalice files
+infra/chalice.out/
+web-api/.chalice/deployed/
+web-api/.chalice/deployments/
+
+# AWS CDK files
+infra/cdk.out/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+/frontend/data/release-version.json
+/.secret.config.yaml
+/worker/wrangler_bak.toml

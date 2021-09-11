@@ -1,0 +1,11 @@
+.idea
+design
+doc
+docker
+frontend
+infra
+web-api
+worker
+.git
+.gitignore
+

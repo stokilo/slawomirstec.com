@@ -1,0 +1,121 @@
+{
+  "menu": {
+    "dashboard": "Dashboard",
+    "utils": "Utils",
+    "utils-todo": "Todo App",
+    "utils-upload": "Upload profile picture",
+    "utils-search": "Search",
+    "appointment": "Appointment",
+    "logout": "Logout"
+  },
+  "appointment": {
+    "calendar": "Calendar",
+    "type": "Type",
+    "range": "Date range",
+    "edit-item": "Edit item",
+    "save-item": "Save item",
+    "delete-item": "Delete item",
+    "cancel-item": "Cancel",
+    "action-load-msg-title": "Appointment loading",
+    "action-load-msg-error": "Sorry, error during appointment load from the server"
+  },
+  "search": {
+    "placeholder": "Polish streets autocomplete search",
+    "howto": "Autocomplete select box for Polish streets, enter min 3 characters, it queries 244.226 entries, i.e. enter War"
+  },
+  "upload": {
+    "first-name": "First Name",
+    "last-name": "Last Name",
+    "upload-label": "Upload & Save",
+    "choose-file": "Choose a file ...",
+    "select-file": "Please select file (maximum 1 MB, format: *.png only)",
+    "upload-failed": "Ups, something went wrong, file was not accepted, is size less than 1 MB ?",
+    "upload-ok": "Profile data and image updates successfully"
+  },
+  "dashboard": {
+    "dashboard": "Dashboard",
+    "contacts": "Leads/Contacts",
+    "users": "App users",
+    "todos": "Todos",
+    "audit-events": "Audit events",
+    "action-load-msg-title": "Dashboard refresh",
+    "action-load-msg-error": "Unable to refresh dashboard, please try again later",
+    "log-item-user-created": "New user created",
+    "log-item-contact-created": "New contact created",
+    "log-item-todo-created": "New todo created"
+  },
+  "todo": {
+    "todo-list": "ToDo List",
+    "add-new": "ADD NEW",
+    "action-completed": "Completed",
+    "action-pending": "Pending",
+    "action-msg-title": "Todo Update",
+    "action-msg-none-selected": "At least one todo must be selected and status change must be possible for all items",
+    "action-msg-success": "Items updated successfully",
+    "action-msg-error": "Unable to update the items, please try again later",
+    "action-load-msg-title": "Todo fetching",
+    "action-load-msg-success": "Items fetched successfully",
+    "action-load-msg-error": "Unable to fetch items, please try again later",
+    "display-options": "display options",
+    "status": "Status",
+    "all-tasks": "All Tasks",
+    "pending-tasks": "Pending Tasks",
+    "completed-tasks": "Completed Tasks",
+    "categories" : "Categories",
+    "labels": "Labels",
+    "add-new-title": "Add new Todo",
+    "title": "Title",
+    "detail": "Detail",
+    "category": "Category",
+    "label": "Label",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "error": "Please fill all details, server reported an error"
+  },
+  "fields": {
+    "name": "Name",
+    "email": "Email",
+    "details": "Details",
+    "password": "Password",
+    "firstName": "First Name",
+    "lastName": "Last Name"
+  },
+  "contact-form": {
+    "success": "Thank you, I will contact you soon.",
+    "error": "Sorry, something went wrong, please try later.",
+    "name": "Name",
+    "email": "Email",
+    "details": "Details",
+    "contact-me": "Contact me"
+  },
+  "signup-form": {
+    "email": "E-mail",
+    "password": "Password",
+    "success": "Thank you, sign up was successful, please login.",
+    "login-link": "Login link"
+  },
+  "login-form": {
+    "email": "E-mail",
+    "password": "Password"
+  },
+  "piaf": {
+    "menu-home": "Home",
+    "location": "Location",
+    "contact": "Contact",
+    "interests": "Interests",
+    "profile": "Profile",
+    "actions": "ACTIONS",
+    "livePreview": "Live Apps Preview",
+    "signUp": "Sign up",
+    "login": "Login",
+    "notification": {
+      "contact-submit": "Sending data ..."
+    }
+  },
+  "api": {
+    "general-error": "Unknown error. Please contact administrator.",
+    "error-msg-title": "Unknown error",
+    "update-status-msg-title": "Update status",
+    "error-msg-content": "Unknown error. Please contact administrator."
+  }
+}

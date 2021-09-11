@@ -1,0 +1,16 @@
+name = "STAGE"
+type = "webpack"
+account_id = ""
+workers_dev = false
+route = "ROUTE_DOMAIN/*"
+zone_id = "CF_ZONE_ID"
+vars = { REST_API_ID = "REST_API_ID_TOKEN", DOMAIN="ROUTE_DOMAIN", REGION="REST_API_REGION", RECAPTCHA="RECAPTCHA_KEY", ADMIN_SECRET_KEY="PYAWS_ADMIN_SECRET_KEY", ADMIN_IP="PYAWS_ADMIN_IP"}
+
+kv_namespaces = [
+    { binding = "AUTOCOMPLETE_KV", id = "KV_AUTOCOMPLETE_NAMESPACE_ID" },
+    { binding = "CACHE_KV", id = "KV_CACHE_NAMESPACE_ID" }
+]
+
+[site]
+bucket = "./dist"
+entry-point = "./workers-site"

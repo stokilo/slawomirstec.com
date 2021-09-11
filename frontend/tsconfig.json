@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "target": "es2018",
+    "module": "esnext",
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "lib": [
+      "esnext",
+      "esnext.asynciterable",
+      "dom"
+    ],
+    "esModuleInterop": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"]
+    },
+    "types": [
+      "@types/node",
+      "@nuxt/types",
+      "@nuxtjs/moment"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
